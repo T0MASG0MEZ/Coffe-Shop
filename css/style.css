@@ -54,7 +54,7 @@ img {
 /* header */
 .navegation-conteiner {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 1.2rem;
     background-color: #e5d2c4;
@@ -94,7 +94,7 @@ img {
 .seccion-principal {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;   
+    margin: 0 auto;
     max-width: 1200px;
     flex-wrap: wrap;
 }
@@ -164,6 +164,7 @@ footer {
     margin-top: 1rem;
     gap: 1rem;
     font-size: 2rem;
+    padding-left: 0;
 }
 
 .redes-a:hover {
@@ -246,10 +247,12 @@ footer {
 .logo-entrada {
     margin: 0 auto;
 }
+
 .logo-entrada {
     max-width: 1200px;
     height: 100%;
 }
+
 .container-curso {
     display: flex;
     justify-content: center;
@@ -259,6 +262,7 @@ footer {
     max-width: 1200px;
     gap: 20px;
 }
+
 .container-curso-articulos {
     display: flex;
     align-items: center;
@@ -266,18 +270,24 @@ footer {
     margin: 1rem;
     flex: 1 1 clamp(200px, 30%, 300px);
 }
+
 .container-curso-articulos img {
     height: 100%;
 }
+
 .container-curso-articulos p {
     font-size: 15px;
 }
+
 .container-curso-articulos span {
     font-size: 15px;
 }
-.container-curso-articulos ol, li {
+
+.container-curso-articulos ol,
+li {
     font-size: 15px;
 }
+
 .container-curso-articulos button {
     padding: 1rem 1.8rem;
     margin: 1rem auto;
@@ -287,11 +297,13 @@ footer {
     font-weight: bold;
     cursor: pointer;
 }
+
 .container-curso-articulos button:hover {
     background-color: #7a695d;
     color: #fff;
     transition: 1s ease;
 }
+
 /* Tienda */
 .conteiner-separador-tienda {
     margin: 2rem auto;
@@ -333,11 +345,48 @@ footer {
     font-weight: bold;
     cursor: pointer;
 }
+
 .container-tienda-img:hover {
     transition: 1s ease;
     box-shadow: 1px 2.2px 1px 2.2px #7a695d;
 }
+
 .container-tienda-img button:hover {
+    background-color: #f2e8e1;
+    color: #7a695d;
+    transition: 1s ease;
+}
+
+/* Contacto */
+.mapa-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+}
+.contacto {
+    font-size: 2rem;
+
+    ::placeholder {
+        font-size: 1.2rem;
+    }
+}
+.form-check-label {
+    font-size: 1.5rem;
+}
+.btn {
+    padding: 1rem 1.8rem;
+    margin: 1rem auto;
+    border: none;
+    background-color: #e5d2c4;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover {
     background-color: #f2e8e1;
     color: #7a695d;
     transition: 1s ease;

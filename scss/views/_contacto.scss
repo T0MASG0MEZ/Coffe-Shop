@@ -1,0 +1,33 @@
+.mapa-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+}
+.contacto {
+    font-size: 2rem;
+
+    ::placeholder {
+        font-size: 1.2rem;
+    }
+}
+.form-check-label {
+    font-size: 1.5rem;
+}
+.btn {
+    padding: 1rem 1.8rem;
+    margin: 1rem auto;
+    border: none;
+    background-color: #e5d2c4;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #f2e8e1;
+    color: #7a695d;
+    transition: 1s ease;
+}

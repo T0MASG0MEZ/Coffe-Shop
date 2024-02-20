@@ -1,0 +1,14 @@
+.separadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    h2 {
+        display: flex;
+        color: #7a695d;
+        font-size: 25px;
+        height: 100%;
+        text-transform: capitalize;
+        text-shadow: 2px 2px 4px #ae9c8f;
+    }
+}

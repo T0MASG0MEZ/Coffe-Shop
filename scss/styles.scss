@@ -1,0 +1,13 @@
+/* utilidades */
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./components/divisores";
+@import "./components/header";
+@import "./components/footer";
+
+/* pages */
+@import "./views/home";
+@import "./views/galeria";
+@import "./views/curso";
+@import "./views/tienda";
+@import "./views/contacto";

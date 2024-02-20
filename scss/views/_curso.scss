@@ -1,0 +1,59 @@
+.logo-entrada {
+    margin: 0 auto;
+}
+
+.logo-entrada {
+    max-width: 1200px;
+    height: 100%;
+}
+
+.container-curso {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.container-curso-articulos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    flex: 1 1 clamp(200px, 30%, 300px);
+}
+
+.container-curso-articulos img {
+    height: 100%;
+}
+
+.container-curso-articulos p {
+    font-size: 15px;
+}
+
+.container-curso-articulos span {
+    font-size: 15px;
+}
+
+.container-curso-articulos ol,
+li {
+    font-size: 15px;
+}
+
+.container-curso-articulos button {
+    padding: 1rem 1.8rem;
+    margin: 1rem auto;
+    border: none;
+    background-color: #e5d2c4;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container-curso-articulos button:hover {
+    background-color: #7a695d;
+    color: #fff;
+    transition: 1s ease;
+}

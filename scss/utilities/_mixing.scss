@@ -1,0 +1,17 @@
+//flexbox
+@mixin flex ($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+//margin center
+@mixin margin {
+    margin: 0 auto;
+}
+//sizes
+@mixin sizes ($height, $width) {
+    height: $height;
+    width: $width;
+}

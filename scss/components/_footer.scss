@@ -1,41 +1,49 @@
+@import "../utilities/variables";
+@import "../utilities/mixing";
+
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex (column,center,center, null);
     background-color: #e5d2c4;
 }
 
 .logo img {
-    height: 200px;
-    width: 200px;
+    @include sizes (200px, 200px);
     margin-top: 3rem;
     border-radius: 500px;
 }
 
 .redes ul {
-    display: flex;
+    @include flex (null,null,null, 1rem);
     margin-top: 1rem;
-    gap: 1rem;
-    font-size: 2rem;
-    padding-left: 0;
-}
-
-.redes-a:hover {
-    color: cadetblue;
+    & li {
+        font-size: 2.8rem;
+        .facebook:hover {
+            color: $facebook;
+            transition: 0.5s;
+        }
+        .whastapp:hover {
+            color: $whatsapp;
+            transition: 0.5s;
+        }
+        .instagram:hover{
+            color: $instagram;
+            transition: 0.5s;
+        }
+    }
 }
 
 .salto {
     display: block;
-    background-color: #7a695d;
-    height: 2px;
-    width: 80%;
+    background-color: $color-1;
+    @include sizes (2px, 80%);
     margin-top: 2rem;
+    margin-bottom: 2rem;
     border: none;
     border-radius: 10px;
 }
 
 .copiright p {
-    font-size: 1rem;
-    margin: 2rem auto;
+    font-size: $medium;
+    @include margin;
+    margin-bottom: 2rem;
 }

@@ -65,9 +65,9 @@ img {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-color: #e5d2c4;
 }
 
@@ -80,14 +80,23 @@ footer {
 
 .redes ul {
   display: flex;
-  margin-top: 1rem;
   gap: 1rem;
-  font-size: 2rem;
-  padding-left: 0;
+  margin-top: 1rem;
 }
-
-.redes-a:hover {
-  color: cadetblue;
+.redes ul li {
+  font-size: 2.8rem;
+}
+.redes ul li .facebook:hover {
+  color: #1DA1F2;
+  transition: 0.5s;
+}
+.redes ul li .whastapp:hover {
+  color: #25D366;
+  transition: 0.5s;
+}
+.redes ul li .instagram:hover {
+  color: #833AB4;
+  transition: 0.5s;
 }
 
 .salto {
@@ -96,13 +105,15 @@ footer {
   height: 2px;
   width: 80%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   border: none;
   border-radius: 10px;
 }
 
 .copiright p {
-  font-size: 1rem;
-  margin: 2rem auto;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 /* pages */

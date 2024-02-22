@@ -1,11 +1,9 @@
 /* utilidades */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Playfair Display", serif;
 }
 
 /* reset rem y em para que sea de 10px */
@@ -39,6 +37,28 @@ img {
   height: 100%;
   text-transform: capitalize;
   text-shadow: 2px 2px 4px #ae9c8f;
+}
+
+button {
+  background-color: #7a695d;
+  border: 2px solid #ae9c8f;
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+button:hover {
+  box-shadow: inset 0 100px 0 0 #ffffff;
 }
 
 .navegation-conteiner {
@@ -117,72 +137,147 @@ footer {
 }
 
 /* pages */
+body {
+  background-color: #e5d2c4;
+}
+
 .banner {
   display: flex;
   max-height: 100vh;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 4rem;
 }
 
 /* Main */
-.container-main {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+.container-box-1 {
+  background-color: #ae9c8f;
 }
-
-.seccion-principal {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1200px;
-  flex-wrap: wrap;
-}
-
-.seccion-principal-cajas {
-  display: flex;
-  align-items: stretch;
-  flex-direction: column;
-  flex: 1 1 clamp(200px, 20%, 300px);
-  margin: 1rem;
-  padding: 3rem;
-  text-align: center;
-}
-
-.seccion-principal-cajas img {
-  height: 80%;
-  border-radius: 1rem;
-  box-shadow: 4rem;
-  border: 0.4rem solid #7a695d;
-}
-
-.seccion-principal p {
-  font-size: 1.7rem;
-  text-align: center;
-}
-
-.seccion-secundaria {
+.container-box-1 .container-box-galeria {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.container-box-1 .container-box-galeria .container-box-img {
+  margin: 3rem;
+  padding: 5rem;
+}
+.container-box-1 .container-box-galeria .container-box-img img {
+  height: 50vh;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.container-box-1 .container-box-galeria .container-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 30%;
+  text-align: center;
+}
+.container-box-1 .container-box-galeria .container-box-text h2 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4rem;
+}
+.container-box-1 .container-box-galeria .container-box-text p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.1rem;
+}
+
+.container-box-2 .container-box-cursos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
-
-.seccion-secundaria-cajas {
+.container-box-2 .container-box-cursos .container-box-img-2 {
+  margin: 3rem;
+  padding: 5rem;
+}
+.container-box-2 .container-box-cursos .container-box-img-2 img {
+  height: 50vh;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.container-box-2 .container-box-cursos .container-box-text-2 {
   display: flex;
-  max-width: 1200px;
   flex-direction: column;
-  margin: auto 5rem;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 30%;
   text-align: center;
-  margin-bottom: 5rem;
+}
+.container-box-2 .container-box-cursos .container-box-text-2 h2 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4rem;
+}
+.container-box-2 .container-box-cursos .container-box-text-2 p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.1rem;
 }
 
-.seccion-secundaria-cajas p {
-  font-size: 1.7rem;
+.container-box-3 {
+  background-color: #ae9c8f;
+}
+.container-box-3 .container-box-tienda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container-box-3 .container-box-tienda .container-box-img-3 {
+  margin: 3rem;
+  padding: 5rem;
+}
+.container-box-3 .container-box-tienda .container-box-img-3 img {
+  height: 50vh;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.container-box-3 .container-box-tienda .container-box-text-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 30%;
   text-align: center;
+}
+.container-box-3 .container-box-tienda .container-box-text-3 h2 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4rem;
+}
+.container-box-3 .container-box-tienda .container-box-text-3 p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.1rem;
 }
 
 .separador-galeria {

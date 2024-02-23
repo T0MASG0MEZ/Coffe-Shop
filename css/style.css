@@ -67,7 +67,7 @@ button:hover {
 }
 
 .navbar-brand img {
-  height: 60px;
+  height: 3.6rem;
   width: 100%;
   border-radius: 30px;
 }
@@ -163,12 +163,13 @@ body {
 
 .banner {
   display: flex;
-  max-height: 100vh;
+  height: 100%;
+  min-height: 290px;
+  padding-top: 4rem;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-/* Main */
 .container-box-1 {
   background-color: #ae9c8f;
 }
@@ -178,13 +179,10 @@ body {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-.container-box-1 .container-box-galeria .container-box-img {
-  margin: 3rem;
-  padding: 5rem;
+  padding: 4rem 0;
 }
 .container-box-1 .container-box-galeria .container-box-img img {
+  width: 100%;
   height: 50vh;
   border-radius: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
@@ -194,17 +192,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
-  width: 30%;
   text-align: center;
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
 .container-box-1 .container-box-galeria .container-box-text h2 {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 .container-box-1 .container-box-galeria .container-box-text p {
   font-family: "Rubik", sans-serif;
@@ -221,12 +221,10 @@ body {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-}
-.container-box-2 .container-box-cursos .container-box-img-2 {
-  margin: 3rem;
-  padding: 5rem;
+  padding: 4rem 0;
 }
 .container-box-2 .container-box-cursos .container-box-img-2 img {
+  width: 100%;
   height: 50vh;
   border-radius: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
@@ -236,17 +234,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  width: 30%;
+  gap: 20px;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 50%;
 }
 .container-box-2 .container-box-cursos .container-box-text-2 h2 {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 .container-box-2 .container-box-cursos .container-box-text-2 p {
   font-family: "Rubik", sans-serif;
@@ -265,12 +264,10 @@ body {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-}
-.container-box-3 .container-box-tienda .container-box-img-3 {
-  margin: 3rem;
-  padding: 5rem;
+  padding: 4rem 0;
 }
 .container-box-3 .container-box-tienda .container-box-img-3 img {
+  width: 100%;
   height: 50vh;
   border-radius: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
@@ -280,17 +277,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
-  width: 30%;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 50%;
 }
 .container-box-3 .container-box-tienda .container-box-text-3 h2 {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 .container-box-3 .container-box-tienda .container-box-text-3 p {
   font-family: "Rubik", sans-serif;

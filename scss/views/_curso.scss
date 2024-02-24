@@ -1,59 +1,134 @@
+// ----------------- LOGO -------------------
 .logo-entrada {
-    margin: 0 auto;
-}
-
-.logo-entrada {
-    max-width: 1200px;
-    height: 100%;
-}
-
-.container-curso {
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 1200px;
-    gap: 20px;
+    margin: 0;
+    padding-top: 5rem;
+    img {
+        width: 100%;
+        max-width: 1440px;
+        height: 100%;
+        min-height: 250px;
+    }
 }
 
-.container-curso-articulos {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem;
-    flex: 1 1 clamp(200px, 30%, 300px);
+// ------------------ ARTICULOS ---------------
+.container-curso {
+    @include flex (null, center, center, 30px, wrap);
+    background-color: $color-2;
+    .container-curso-articulo {
+        @include flex (null, center, center, 3rem, wrap);
+        padding: 3rem 0;
+        flex-grow: 1;
+        flex-basis: 0;
+        .container-curso-articulo-text {
+            @include flex (column, center, center, 20px, wrap);
+            padding: 3rem;
+        }
+        h2 {
+            @include text (900);
+            font-size: $xl;
+            text-align: center;
+        }
+        p {
+            @include text (500);
+            font-size: $large;
+            text-align: center;
+        }
+        ol li {
+            @include text (500);
+            font-size: $large;
+        }
+    }
+    .container-curso-img {
+        padding: 2rem;
+        height: 60vh;
+        img {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+            border-radius: 5rem;
+            overflow: hidden;
+            height: 100%;
+        }
+    }
 }
-
-.container-curso-articulos img {
-    height: 100%;
+.container-curso-2 {
+    @include flex (null, center, center, 3rem, wrap);
+    .container-curso-articulos-2 {
+        @include flex (row-reverse, center, center, 30px, wrap);
+        padding: 10rem 0;
+        flex-grow: 1;
+        flex-basis: 0;
+        .container-curso-articulo-text-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            padding: 3rem;
+            h2 {
+                @include text (900);
+                font-size: $xl;
+                text-align: center;
+            }
+            p {
+                @include text (500);
+                font-size: $large;
+                text-align: center;
+            }
+            ol li {
+                @include text (500);
+                font-size: $large;
+            }
+        }
+        .container-curso-img-2 {
+            padding: 2rem;
+            height: 60vh;
+            img {
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+                border-radius: 5rem;
+                overflow: hidden;
+                height: 100%;
+            }
+        }
+    }
 }
-
-.container-curso-articulos p {
-    font-size: 15px;
-}
-
-.container-curso-articulos span {
-    font-size: 15px;
-}
-
-.container-curso-articulos ol,
-li {
-    font-size: 15px;
-}
-
-.container-curso-articulos button {
-    padding: 1rem 1.8rem;
-    margin: 1rem auto;
-    border: none;
-    background-color: #e5d2c4;
-    border-radius: 3px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.container-curso-articulos button:hover {
-    background-color: #7a695d;
-    color: #fff;
-    transition: 1s ease;
+.container-curso-3 {
+    @include flex (null, center, center, 30px, wrap);
+    margin: 0;
+    padding: 0;
+    background-color: $color-2;
+    .container-curso-articulos-3 {
+        @include flex (null, center, center, 3rem, wrap);
+        padding: 3rem 0;
+        flex-grow: 1;
+        flex-basis: 0;
+        .container-curso-articulo-text-3 {
+            @include flex (column, center, center, 20px, wrap);
+            padding: 3rem;
+        }
+        h2 {
+            @include text (900);
+            font-size: $xl;
+            text-align: center;
+        }
+        p {
+            @include text (500);
+            font-size: $large;
+            text-align: center;
+        }
+        ol li {
+            @include text (500);
+            font-size: $large;
+        }
+    }
+    .container-curso-img-3 {
+        padding: 2rem;
+        height: 60vh;
+        img {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+            border-radius: 5rem;
+            overflow: hidden;
+            height: 100%;
+        }
+    }
 }

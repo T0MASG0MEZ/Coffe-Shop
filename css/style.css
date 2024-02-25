@@ -24,21 +24,6 @@ img {
   width: 100%;
 }
 
-.separadores {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-}
-.separadores h2 {
-  display: flex;
-  color: #7a695d;
-  font-size: 25px;
-  height: 100%;
-  text-transform: capitalize;
-  text-shadow: 2px 2px 4px #ae9c8f;
-}
-
 button {
   background-color: #7a695d;
   border: 2px solid #ae9c8f;
@@ -299,15 +284,34 @@ body {
   font-size: 2.1rem;
 }
 
-.separador-galeria {
-  margin: 4rem auto;
+.main-galeria {
+  margin-top: 10rem;
+  padding-bottom: 3rem;
+  background-color: #7a695d;
+  border-radius: 5rem 5rem 0 0;
+}
+
+.galeria-separador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.galeria-separador h2 {
+  font-size: 4rem;
+  padding: 3rem 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   gap: 20px;
   margin-bottom: 3rem;

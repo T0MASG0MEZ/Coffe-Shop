@@ -1,12 +1,25 @@
-.separador-galeria {
-    margin: 4rem auto;
+.main-galeria {
+    margin-top: 10rem;
+    padding-bottom: 3rem;
+    background-color: $color-1;
+    border-radius: 5rem 5rem 0 0;
+}
+.galeria-separador {
+    @include flex (null, center,center,null,null);
+    color: #fff;
+    h2 {
+        font-size: $xxl;
+        padding: 3rem 0;
+        @include text (900);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     gap: 20px;
     margin-bottom: 3rem;

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Tienda</title>
 </head>
@@ -12,9 +13,10 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md fixed-top">
-            <div class="container-fluid bg-color">
-                <button class="navbar-toggler order-2 order-md-1" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid bg-color p-3">
+                <button class="navbar-toggler order-2 order-md-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
@@ -30,7 +32,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="navbar-brand order-1 order-md-3 m-auto" href="../index.html">
+                <a class="navbar-brand order-1 order-md-3" href="../index.html">
                     <img src="../assest/logo-elegante.png" alt="Logo">
                 </a>
                 <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-right">
@@ -50,56 +52,83 @@
         </nav>
     </header>
     <main>
-        <div class="conteiner-separador-tienda">
-            <div class="separadores">
-                <h2>¿QUIERES ABRIR TU PROPIA CAFETERIA?</h2>
-            </div>
-            <div class="separadores">
-                <h2>NECESITAS ESTO</h2>
+        <div class="banner-tienda">
+            <div class="banner-texto">
+                <h2>Nuestros productos</h2>
+                <p>Consigue los mejores utenzillos para lograr tener el mejor cafe!
+                </p>
             </div>
         </div>
         <section class="container-tienda">
-            <div class="container-tienda-img">
-                <img src="../assest/tienda/maquina-espresso.jpg" alt="">
-                <h2>Maquina de Espresso</h2>
-                <span>$99,999</span>
-                <button>Saber mas</button>
-            </div>
-            <div class="container-tienda-img">
-                <img src="../assest/tienda/cafe.jpg" alt="">
-                <h2>Cafe</h2>
-                <span>$99,999</span>
-                <button>Saber mas</button>
-            </div>
+            <article class="container-cards">
+                <div class="cards">
+                    <div>
+                        <img src="../assest/tienda/cafe-en-grano.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>Cafe en grano</h2>
+                        <span>$99.999</span>
+                    </div>
+                    <button>Comprar</button>
+                </div>
+                <div class="cards">
+                    <div>
+                        <img src="../assest/tienda/filtrado.jpg" alt="filtrados">
+                    </div>
+                    <div>
+                        <h2>Metodos de Filtrado</h2>
+                        <span>$99.999</span>
+                    </div>
+                    <button>Comprar</button>
+                </div>
+                <div class="cards">
+                    <div>
+                        <img src="../assest/tienda/filtros.jpg" alt="filtros">
+                    </div>
+                    <div>
+                        <h2>Filtros</h2>
+                        <span>$99.999</span>
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </article>
         </section>
-        <section class="container-tienda">
-            <div class="container-tienda-img">
-                <img src="../assest/tienda/filtros.jpg" alt="">
-                <h2>Filtros</h2>
-                <span>$99,999</span>
-                <button>Saber mas</button>
-            </div>
-            <div class="container-tienda-img">
-                <img src="../assest/tienda/pitchers.jpg" alt="">
-                <h2>Pitchers</h2>
-                <span>$99,999</span>
-                <button>Saber mas</button>
-            </div>
-        </section>
-        <section class="container-tienda">
-            <div class="container-tienda-img">
-                <img src="../assest/tienda/tazas.jpg" alt="">
-                <h2>Tazas</h2>
-                <span>$99,999</span>
-                <button>Saber mas</button>
-            </div>
-            <div class="container-tienda-img">
-                <img src="../assest/tienda/filtrado.jpg" alt="">
-                <h2>Filtrados</h2>
-                <span>$99,999</span>
-                <button>Saber mas</button>
-            </div>
-        </section>
+        <div class="bg-color">
+            <section class="container-tienda">
+                <article class="container-cards">
+                    <div class="cards">
+                        <div>
+                            <img src="../assest/tienda/jarra-pitcher.jpg" alt="">
+                        </div>
+                        <div>
+                            <h2>Pitcher</h2>
+                            <span>$99.999</span>
+                        </div>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="../assest/tienda/maquina-espresso.jpg" alt="filtrados">
+                        </div>
+                        <div>
+                            <h2>Maquina Espresso</h2>
+                            <span>$99.999</span>
+                        </div>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="../assest/tienda/tazas.jpg" alt="filtros">
+                        </div>
+                        <div>
+                            <h2>Tazas</h2>
+                            <span>$99.999</span>
+                        </div>
+                        <button>Comprar</button>
+                    </div>
+                </article>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="logo">
@@ -131,6 +160,9 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/c5c9b9e858.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

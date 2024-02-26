@@ -313,6 +313,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
   max-width: 1440px;
   margin: 0 auto;
+  padding: 2rem;
   gap: 20px;
   margin-bottom: 3rem;
 }
@@ -330,24 +331,24 @@ body {
 }
 
 .grid-columna:nth-child(3) {
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .grid-columna:nth-child(4) {
-  grid-column: 4/8;
+  grid-column: 5/9;
 }
 
 .grid-columna:nth-child(5) {
-  grid-column: 8/13;
+  grid-column: 9/13;
   grid-row: 2/4;
 }
 
 .grid-columna:nth-child(6) {
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .grid-columna:nth-child(7) {
-  grid-column: 4/8;
+  grid-column: 5/9;
 }
 
 .grid-columna:nth-child(8) {
@@ -455,7 +456,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 20px;
+  flex-wrap: wrap;
   padding: 3rem;
 }
 .container-curso-2 .container-curso-articulos-2 .container-curso-articulo-text-2 h2 {
@@ -555,56 +557,96 @@ body {
   height: 100%;
 }
 
-.conteiner-separador-tienda {
-  margin: 2rem auto;
+.banner-tienda {
+  background-image: url(../../assest/tienda/banner-tienda.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  padding: 8rem;
+  margin: 0 auto;
+}
+.banner-tienda .banner-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 4rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.banner-tienda .banner-texto h2 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.1rem;
+}
+.banner-tienda .banner-texto p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.6rem;
 }
 
 .container-tienda {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 1.5rem;
 }
-
-.container-tienda-img {
+.container-tienda .container-cards {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+  text-align: center;
+}
+.container-tienda .container-cards .cards {
+  display: flex;
   flex-direction: column;
-  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
   flex: 1 1 clamp(300px, 30%, 400px);
-}
-
-.container-tienda-img h2 {
-  font-size: 2rem;
-}
-
-.container-tienda-img span {
-  font-size: 1.7rem;
-}
-
-.container-tienda-img button {
-  padding: 1rem 1.8rem;
-  margin: 1rem auto;
-  border: none;
-  background-color: #e5d2c4;
-  border-radius: 3px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.container-tienda-img:hover {
-  transition: 1s ease;
-  box-shadow: 1px 2.2px 1px 2.2px #7a695d;
-}
-
-.container-tienda-img button:hover {
   background-color: #f2e8e1;
-  color: #7a695d;
-  transition: 1s ease;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.container-tienda .container-cards .cards img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  padding: 0.3rem;
+}
+.container-tienda .container-cards .cards h2 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.1rem;
+}
+.container-tienda .container-cards .cards span {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.6rem;
+}
+.container-tienda .container-cards .cards button {
+  margin-bottom: 1rem;
 }
 
 .mapa-contacto {

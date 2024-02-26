@@ -58,12 +58,8 @@
         padding: 10rem 0;
         flex-grow: 1;
         flex-basis: 0;
-        .container-curso-articulo-text-2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
+        .container-curso-articulo-text-2 { 
+            @include flex (column, center, center,  20px,  wrap);
             padding: 3rem;
             h2 {
                 @include text (900);
@@ -76,9 +72,9 @@
                 text-align: center;
             }
             ol li {
-                @include text (500);
+                @include text (500); 
                 font-size: $large;
-            }
+            } 
         }
         .container-curso-img-2 {
             padding: 2rem;

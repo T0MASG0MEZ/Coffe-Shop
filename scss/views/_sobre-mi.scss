@@ -1,0 +1,50 @@
+.banner-sobremi {
+    background:url(../../assest/banner-sobre-mi.jpg) no-repeat center center;
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+    ::before {
+        content: "";
+
+    }
+    .container-banner-sobremi {
+        padding: 15rem;
+        color: $color-5;
+        .title {
+        text-align: center;
+        font-size: clamp(2em, 5vw, 5em);
+            h1 {
+                @include text (900);
+            }
+            p {
+                @include text (900);
+            }
+        } 
+        .presentation {
+            @include text (900);
+            font-size: $medium;
+            text-align: center;
+        }
+    }
+}
+.section-creador {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0rem auto;
+    padding: 9rem;
+    .article-creador {
+        @include flex (row, center, center, 20px, null);
+        img {
+            border-radius: 100%;
+            padding: 0 3rem;
+            width: 80%;
+        }
+        p {
+            @include text (500);
+            font-size: $medium;
+            text-align: center;
+            color: $color-5;
+        }
+    }
+}

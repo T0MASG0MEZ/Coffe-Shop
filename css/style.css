@@ -320,6 +320,7 @@ body {
 
 .grid-columna img {
   height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .grid-columna:nth-child(1) {
@@ -565,6 +566,7 @@ body {
   max-width: 1440px;
   padding: 8rem;
   margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .banner-tienda .banner-texto {
   display: flex;
@@ -684,6 +686,73 @@ body {
   background-color: #f2e8e1;
   color: #7a695d;
   transition: 1s ease;
+}
+
+.banner-sobremi {
+  background: url(../../assest/banner-sobre-mi.jpg) no-repeat center center;
+  background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.banner-sobremi ::before {
+  content: "";
+}
+.banner-sobremi .container-banner-sobremi {
+  padding: 15rem;
+  color: #ffffff;
+}
+.banner-sobremi .container-banner-sobremi .title {
+  text-align: center;
+  font-size: clamp(2em, 5vw, 5em);
+}
+.banner-sobremi .container-banner-sobremi .title h1 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.banner-sobremi .container-banner-sobremi .title p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.banner-sobremi .container-banner-sobremi .presentation {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.section-creador {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0rem auto;
+  padding: 9rem;
+}
+.section-creador .article-creador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section-creador .article-creador img {
+  border-radius: 100%;
+  padding: 0 3rem;
+  width: 80%;
+}
+.section-creador .article-creador p {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

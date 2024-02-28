@@ -559,7 +559,7 @@ body {
 }
 
 .banner-tienda {
-  background-image: url(../../assest/tienda/banner-tienda.png);
+  background-image: url(../assest/tienda/banner-tienda.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -574,6 +574,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  min-width: 180px;
   width: 100%;
   padding: 4rem;
   margin: 0 auto;
@@ -689,7 +690,7 @@ body {
 }
 
 .banner-sobremi {
-  background: url(../../assest/banner-sobre-mi.jpg) no-repeat center center;
+  background: url(../assest/banner-sobre-mi.jpg) no-repeat center center;
   background-size: cover;
   min-width: 320px;
   max-width: 1440px;

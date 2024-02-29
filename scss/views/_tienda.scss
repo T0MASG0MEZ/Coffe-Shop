@@ -44,8 +44,8 @@
             img {
                 height: 80vh;
                 width: 100%;
+                padding: .3rem;
                 object-fit: cover;
-                padding: 0.3rem;
             }
             h2 {
                 @include text (700);

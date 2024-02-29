@@ -1,33 +1,128 @@
-.mapa-contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1200px;
-    margin-bottom: 2rem;
-}
-.contacto {
-    font-size: 2rem;
+.container-contacto {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    margin: 5rem auto;
+    
+    .row-container {
+        border-radius: 2rem;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        .img-banner{
+            background: url(../assest/contacto-banner.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .columns {
+            @include flex (null, center, center, 10px, null);
+            text-align: center;
+            color: white;
+            padding: 3rem;
+            
+            .container-formulario {
+                @include text (400);
+                width: 100%;
+                font-size: $large;
 
-    ::placeholder {
-        font-size: 1.2rem;
+                h2 {
+                    @include text (900);
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.3);
+                    font-size: $xl;
+                }
+                
+                label {
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.3);
+                    :active {
+                        color: $color-2;
+                        transition: 1s ease;
+                    }
+                }
+                
+                .inputs {
+                    width: 100%;
+                    border-radius: .5rem;
+                    padding: .5rem;
+                    border: 2px solid $color-2;
+                    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+                    transition: .3s ease;
+                }                   
+                
+                input:focus {
+                    background: rgb(212, 212, 212);
+                    border: 2px solid $color-1;
+                    border-radius: 1.5rem;
+                    outline: none;
+                }
+                
+                textarea {
+                    width: 100%;
+                    border-radius: .5rem;
+                    padding: .5rem;
+                    border: 2px solid $color-2;
+                    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.5);
+                    transition: .3s ease;
+                }
+                
+                textarea:focus {
+                    background: rgb(212, 212, 212);
+                    border: 2px solid $color-1;
+                    border-radius: 1.5rem;
+                    outline: none;
+                }
+                .button-contacto {
+                    display: flex;
+                    justify-content: right;
+                    .button-submit {
+                        margin-top: 1rem;
+                        background-color: $color-2;   
+                    }
+                }
+            }
+            .container-text {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65));
+                padding: 3rem;
+                border-radius: 2rem;
+                @include text (500);
+                width: 100%;
+                font-size: $xl;
+                
+                h2 {
+                    font-size: $xxl;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(0, 0, 0, 0.3);
+                }
+
+                ul {
+                    @include flex (row, center, center, 30px, null);
+                    font-size: $xxl;
+                    .instagram {
+                        color: $instagram;
+                    }
+                    .whastapp {
+                        color: $whatsapp;
+                    }
+                    .facebook {
+                        color: $facebook;
+                    }
+                }
+                
+                .phone {
+                    font-size: $large;
+                }
+            }
+        }
     }
 }
-.form-check-label {
-    font-size: 1.5rem;
-}
-.btn {
-    padding: 1rem 1.8rem;
-    margin: 1rem auto;
-    border: none;
-    background-color: #e5d2c4;
-    border-radius: 3px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-.btn:hover {
-    background-color: #f2e8e1;
-    color: #7a695d;
-    transition: 1s ease;
+.mapa-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 200px;
+    
+    iframe {
+        width: 100%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
 }

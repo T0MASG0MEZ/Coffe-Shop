@@ -32,20 +32,17 @@
     }
 }
 .section-creador {
-    @include flex (null , center, center, null, null);
-    max-width: 1440px;
-    min-width: 320px;    
+    @include flex (null , center, center, null, wrap);
+    max-width: 1440px;  
     margin: 0 auto;
     .article-creador {
-        @include flex (right, center, center, null, null);
+        @include flex (null, center, center, null, null);
         background: linear-gradient(rgba(5, 7, 12, 0.15), rgba(5, 7, 12, 0.15));
         border-radius: 2rem;
         overflow: hidden;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        flex: 1;
         .article-texto {
-            flex: 1;
             background-color: $color-5;
             padding: 1rem;
             overflow: hidden;

@@ -14,12 +14,14 @@
     font-weight: $weight;
     font-style: normal;
 }
-//margin center
-@mixin margin {
-    margin: 0 auto;
-}
 //sizes
 @mixin sizes ($height, $width) {
     height: $height;
     width: $width;
+}
+//tamaño maximo y centrar
+@mixin tamaño ($max-width, $min-widht) {
+    margin: 0 auto;
+    max-width: $max-width;
+    min-width: $min-widht;
 }

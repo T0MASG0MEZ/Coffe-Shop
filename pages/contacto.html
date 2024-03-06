@@ -4,43 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!------------------------- SEO ------------------------->
-    <meta name="keywords" content="Información de contacto, Contacta con nosotros, Dirección de la tienda, Correo electrónico, Teléfono de contacto, Formulario de contacto, Horario de atención, Consultas sobre café, Reserva de eventos, Servicio al cliente">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <!------------------------- SEO ------------------------->
+    <meta name="keywords" content="Información de contacto, Contacta con nosotros, Dirección de la tienda, Correo electrónico, Teléfono de contacto, Formulario de contacto, Horario de atención, Consultas sobre café, Reserva de eventos, Servicio al cliente">
     <title>Espresso Haven | Contacto</title>
+    <meta name="description" content="¡Conéctate con nosotros! Estamos aquí para responder a tus preguntas, escuchar tus comentarios y ayudarte en todo lo que necesites. Completa el formulario de contacto o contáctanos a través de nuestros canales sociales. Tu opinión es importante para nosotros, y estamos ansiosos por saber de ti. ¡No dudes en ponerte en contacto y hacer de tu experiencia con nosotros algo extraordinario!">
+    <meta property="og:title" content=Espresso Haven>
+    <meta property="og:site_name" content=Espresso Haven>
+    <meta property="og:url" content=https://coffe-shop-mauve.vercel.app/>
     <link rel="icon" href="../assest/Logo.png" type="#">
     
 </head>
 
 <body>
+    <!------------------------- Navbar ------------------------->
     <header>
         <nav class="navbar navbar-expand-md fixed-top">
             <div class="container-fluid bg-color p-3">
-                <button class="navbar-toggler order-2 order-md-1" type="button" data-bs-toggle="collapse"
-                    data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
-                    <ul class="navbar-nav m-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
+                <div class="collapse navbar-collapse justify-content-around" id="#">
+                    <div class="logo-inicio">
+                        <a class="navbar-brand" href="../index.html">
+                            <img src="../assest/logo-elegante.png" alt="Logo">
+                        </a>
+                    </div>
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/sobre-mi.html">Sobre Mi</a>
                         </li>
-                    </ul>
-                </div>
-                <a class="navbar-brand order-1 order-md-3" href="../index.html">
-                    <img src="../assest/logo-elegante.png" alt="Logo">
-                </a>
-                <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-right">
-                    <ul class="navbar-nav m-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/galeria.html">Galeria</a>
                         </li>
@@ -52,9 +47,14 @@
                         </li>
                     </ul>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
     </header>
+    <!------------------------- Formulario ------------------------->
     <section class="container-xl container-contacto">
             <div class="row row-container bg-color">
                 <div class="col-md-6 columns">
@@ -64,7 +64,7 @@
                             <label for="nombre">Nombre</label><br>
                             <input  class="inputs" type="text" id="nombre" name="nombre" required placeholder="Dwayne Johnson"><br>
                             <label for="email">Email</label><br>
-                            <input class="inputs" type="email" id="email" name="email" required placeholder="DwayneJohnson@gemail.com"><br>
+                            <input class="inputs" type="email" id="email" name="email" required placeholder="DwayneJohnson@gmail.com"><br>
                             <label for="mensaje">Mensaje</label><br>
                             <textarea id="mensaje" name="mensaje" required placeholder="Cuentanos aca..."></textarea><br>
                             <div class="button-contacto">
@@ -78,17 +78,17 @@
                         <h2>Cuentanos que te ha parecido Espresso Haven!</h2>
                         <ul>
                             <li class="redes-items">
-                                <a class="facebook" href="">
+                                <a class="facebook" href="#">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
                             </li>
                             <li class="redes-items">
-                                <a class="whastapp" href="">
+                                <a class="whastapp" href="#">
                                     <i class="fa-brands fa-whatsapp"></i>
                                 </a>
                             </li>
                             <li class="redes-items">
-                                <a class="instagram" href="">
+                                <a class="instagram" href="#">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
@@ -102,6 +102,7 @@
                 </div>
             </div>
     </section>
+    <!------------------------- mapa ------------------------->
     <section class="">
         <div class="bg-color">
             <div class="mapa-contacto">
@@ -112,24 +113,25 @@
             </div>
         </div>
     </section>
+    <!------------------------- footer ------------------------->
     <footer>
         <div class="logo">
-            <img class="" src="../assest/Logo.png" alt="">
+            <img class="" src="../assest/Logo.png" alt="Logo Secundario">
         </div>
         <section class="redes">
             <ul>
                 <li class="redes-items">
-                    <a class="facebook" href="">
+                    <a class="facebook" href="#">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
                 </li>
                 <li class="redes-items">
-                    <a class="whastapp" href="">
+                    <a class="whastapp" href="#">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </li>
                 <li class="redes-items">
-                    <a class="instagram" href="">
+                    <a class="instagram" href="#">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
@@ -140,7 +142,7 @@
             <p>Diseñado por tomi</p>
         </div>
     </footer>
-
+    <!------------------------- Script ------------------------->
     <script src="https://kit.fontawesome.com/c5c9b9e858.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

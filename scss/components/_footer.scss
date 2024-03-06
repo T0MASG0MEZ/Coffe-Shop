@@ -3,7 +3,7 @@
 
 footer {
     @include flex (column,center,center, null, null);
-    background-color: #e5d2c4;
+    background-color: $color-3;
 }
 
 .logo img {
@@ -44,6 +44,6 @@ footer {
 
 .copiright p {
     font-size: $medium;
-    @include margin;
+    margin: 0 auto;
     margin-bottom: 2rem;
 }
